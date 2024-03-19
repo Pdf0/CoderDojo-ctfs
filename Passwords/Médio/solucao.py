@@ -1,0 +1,5 @@
+binary_password = "01100101 01110011 01110100 11100001 00100000 01101110 01101111 00100000 01000111 01001110 01010010 01100001 01110100 01101001 01101111 01101110"
+password = ""
+for byte in binary_password.split():
+    password += chr(int(byte, 2))
+print("Password:", password)
